@@ -2,7 +2,7 @@
 
 set -e
 
-echo "[+] Updating Termux packages..."
+echo "[+] Updating Termux..."
 pkg update -y
 pkg upgrade -y
 
@@ -12,5 +12,5 @@ pkg install -y proot-distro
 echo "[+] Installing Debian..."
 proot-distro install debian
 
-echo "[+] Entering Debian..."
+echo "[+] Starting Debian..."
 proot-distro login debian
